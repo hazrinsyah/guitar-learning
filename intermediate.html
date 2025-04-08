@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intermediate Lessons</title>
+  <link rel="stylesheet" href="intermediate.css"/>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="home.html" id="nav-home-link">Home</a></li>
+      <li><a href="lessons.html" class="active" id="nav-lessons-link">Lessons</a></li>
+      <li><a href="dashboard.html" id="nav-dashboard-link">Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <section class="lessons">
+    <h2>Intermediate Lessons</h2>
+    <p>Advance your skills with these intermediate-level lessons.</p>
+
+    <div class="lesson-container">
+      <div class="lesson-card" onclick="openModal('modal1')">
+        <img src="assets/intermediate1.jpeg" alt="Barre Chords"/>
+        <h3>Barre Chords</h3>
+        <p>Learn how to play barre chords efficiently.</p>
+      </div>
+
+      <div class="lesson-card" onclick="openModal('modal2')">
+        <img src="assets/intermediate2.jpg" alt="Fingerpicking"/>
+        <h3>Fingerpicking</h3>
+        <p>Master fingerpicking techniques for different patterns.</p>
+      </div>
+
+      <div class="lesson-card" onclick="openModal('modal3')">
+        <img src="assets/intermediate3.jpg" alt="Strumming"/>
+        <h3>Strumming</h3>
+        <p>Enhance your rhythm and strumming patterns.</p>
+      </div>
+
+      <div class="lesson-card" onclick="openModal('modal4')">
+        <img src="assets/intermediate4.jpg" alt="Special Techniques"/>
+        <h3>Special Techniques</h3>
+        <p>Watch a tutorial on unique guitar techniques.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal 1: Barre Chords -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h2 class="modal-title">🎸 Mastering Barre Chords</h2>
+      <p class="modal-subtext">Learn how to play barre chords efficiently and improve your guitar skills.</p>
+
+      <h3 class="modal-section-title">🎼 What are Barre Chords?</h3>
+      <p class="modal-text">Barre chords are a crucial technique in guitar playing that allow you to play different chord shapes all over the fretboard.</p>
+
+      <h3 class="modal-section-title">🎯 Basic Barre Chord Shapes</h3>
+      <div class="barre-chords-container">
+        <img src="assets/majorbarrechord.jpg" class="chord-img"/>
+        <div class="chord-explanation">
+          <strong>Major and Minor Barre Chords:</strong>
+          <p>The image shows both Major and Minor Barre Chord shapes. Major barre chords have a root note on the 6th or 5th string, while minor barre chords have a similar shape but use a minor chord form.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Fingerpicking -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h2 class="modal-title">🎸 Fingerpicking Techniques</h2>
+      <p class="modal-subtext">Develop coordination and tone through fingerpicking patterns.</p>
+
+      <h3 class="modal-section-title">🪕 Patterns & Exercises</h3>
+      <p class="modal-text">Start with simple thumb and index finger movements, then incorporate more fingers gradually. Practice Travis picking and arpeggios.</p>
+
+      <img src="assets/fingerpicking.jpg" alt="Finger Chart" class="fingerpicking-img" />
+    </div>
+  </div>
+
+  <!-- Modal 3: Strumming -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h2 class="modal-title">🪕 Strumming Patterns</h2>
+      <p class="modal-subtext">Improve your rhythm with varied strumming styles.</p>
+
+      <h3 class="modal-section-title">🥁 Common Rhythms</h3>
+      <p class="modal-text">Try down-up patterns like DDUUDU and syncopated rhythms to create groove.</p>
+
+      <img src="assets/strumming_patterns.jpg" class="chord-img" alt="Strumming Patterns" />
+    </div>
+  </div>
+
+  <!-- Modal 4: Special Techniques -->
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h2 class="modal-title">✨ Special Techniques</h2>
+      <p class="modal-subtext">Explore hammer-ons, pull-offs, slides, and more.</p>
+
+      <div class="modal-video">
+        <iframe class="modal-iframe" src="https://www.youtube.com/embed/sDjeY1jI2Z8?si=6QsB7aqzbpsf7S2d" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Guitar Master. All rights reserved.</p>
+  </footer>
+
+  <script src="intermediate.js"></script>
+</body>
+</html>

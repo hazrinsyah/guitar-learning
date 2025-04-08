@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Guitar Lessons</title>
+    <link rel="stylesheet" href="beginner.css">
+</head>
+<body>
+
+    
+    <nav>
+        <ul>
+            <li><a href="home.html" id="nav-home-link">Home</a></li>
+            <li><a href="lessons.html" class="active" id="nav-lessons-link">Lessons</a></li>
+            <li><a href="dashboard.html" id="nav-dashboard-link">Dashboard</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="lesson-container">
+        <h1>Beginner Guitar Lessons</h1>
+        <div class="lessons">
+            <div class="lesson-card" onclick="openLesson('getting-started')">
+                <img src="assets/beginner1.jpg" alt="Getting Started">
+                <h3>Getting Started</h3>
+                <p>Learn how to hold and strum your guitar.</p>
+            </div>
+            <div class="lesson-card" onclick="openLesson('plucking-strings')">
+                <img src="assets/beginner2.jpg" alt="Plucking Strings">
+                <h3>Plucking Open Strings</h3>
+                <p>Practice plucking individual strings to build accuracy.</p>
+            </div>
+            <div class="lesson-card" onclick="openLesson('basic-transitions')">
+                <img src="assets/beginner3.jpg" alt="Basic String Transitions">
+                <h3>Basic String Transitions</h3>
+                <p>Learn to move between strings smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Lessons -->
+    <div id="lesson-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeLesson()">&times;</span>
+            <h2 id="lesson-title"></h2>
+            <p id="lesson-description"></p>
+            <h3>🎸 Video Tutorial</h3>
+            <iframe id="lesson-video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="beginner.js"></script>
+</body>
+</html>

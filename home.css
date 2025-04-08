@@ -1,0 +1,402 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('assets/Cleanow.ttf') format('truetype');
+}
+
+/* Navigation Bar */
+.header {
+    background: rgb(0, 0, 0);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    font-family: 'rock salt', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-size: 24px;
+    color:  rgb(255, 208, 0);;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a:focus {
+    color: black;
+    background: #f8e800;
+}
+
+/* 🎸 Profile Button Styling */
+.profile-btn {
+    background: none;
+    border: 2px solid #00000028;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.profile-btn:hover {
+    background: #1db954;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Profile Icon */
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Hero Section with Video Background */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 208, 0);
+    max-width: 600px;
+    text-align: center;
+    font-family: 'rock salt', sans-serif;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+}
+
+.get-started-btn {
+    background: rgb(255, 208, 0);
+    color: rgb(8, 8, 8);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.get-started-btn:hover {
+    background:  rgba(255, 208, 0, 0.5);
+}
+
+/* Guitar Info Section Styling */
+.guitar-info {
+    background: url('assets/testing.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    height: 70vh;
+}
+
+.guitar-info h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(10, 8, 1); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.432); 
+    font-family: 'MyCustomFont', sans-serif;
+}
+
+.guitar-info p {
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+}
+
+/* 🎸 Info Card Styling */
+.info-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.info-item {
+    position: relative;
+    background: rgba(0, 0, 0, 0.856);  /* Darker, but slightly transparent */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    width: 260px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.info-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.555);
+}
+
+.info-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.info-item p {
+    color: #f0f0f0;
+    font-size: 15px;
+    padding: 15px;
+    line-height: 1.5;
+}
+/* Gradient Overlay */
+.info-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+/* Lesson Title */
+.info-item h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffee04; /* A modern highlight color */
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+/* Lesson Label */
+.info-item .lesson-label {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ccc;
+    z-index: 2;
+}
+
+/* Progress Bar */
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 4px;
+    background: #1db954;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Pop-up Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+/* Pop-up Box with Glassmorphism */
+.popup-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 350px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 1001;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Input Fields */
+.input-field {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-field:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Login Button */
+.submit-button {
+    background: #1db954;
+    border: none;
+    padding: 12px 0;
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #17a74b;
+}
+
+/* Sign-up Link */
+.popup-box p {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.popup-box a {
+    color: #1db954;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.popup-box a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero {
+        height: auto;
+        padding: 50px 10px;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 50px;
+    margin: 0;
+}
+
+.footer a {
+    color: #ffef08;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+} 

@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guitar Master</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#">🎸 Guitar Master</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Lessons</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+      <video autoplay loop muted playsinline class="background-video">
+        <source src="assets/homebackground.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-content">
+        <h1>Master the Guitar</h1>
+        <p>Your interactive learning journey starts here.</p>
+        <button class="get-started-btn" onclick="openLoginPopup()">Get Started</button>
+      </div>
+    </section>
+
+  
+<!-- Guitar Information Section -->
+<section class="guitar-info">
+  <h2>Learn More About Guitars</h2>
+ 
+  <div class="info-grid">
+      <div class="info-item">
+          <img src="assets/advanced1.jpg" alt="Types of Guitars">
+          <h3>Types of Guitars</h3>
+          <p>Guitars come in various types, including acoustic, electric, and bass.</p>
+      </div>
+      <div class="info-item">
+          <img src="assets/advanced2.jpg" alt="Guitar Anatomy">
+          <h3>Guitar Anatomy</h3>
+          <p>Understanding the parts of a guitar is essential for any guitarist.</p>
+      </div>
+      <div class="info-item">
+          <img src="assets/advanced3.jpg" alt="Choosing the Right Guitar">
+          <h3>Choosing the Right Guitar</h3>
+          <p>Pick the perfect guitar based on your style and preference.</p>
+      </div>
+      <div class="info-item">
+          <img src="assets/advanced4.jpg" alt="Guitar Maintenance">
+          <h3>Guitar Maintenance</h3>
+          <p>Keep your guitar in top condition with regular care.</p>
+      </div>
+  </div>
+  
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+  <p>© 2025 Guitar Master. All Rights Reserved.</p>
+  <p>
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms of Service</a> | 
+      <a href="#">Contact</a>
+  </p>
+</footer>
+
+    <!-- Login Pop-up -->
+    <div class="popup-overlay" id="loginPopup">
+      <div class="popup-box">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Login</h2>
+        <input id="loginUsername" class="input-field" type="text" placeholder="Username" />
+        <input id="loginPassword" class="input-field" type="password" placeholder="Password" />
+        <button class="submit-button" onclick="handleLogin()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="openSignUpPopup()">Sign Up</a></p>
+      </div>
+    </div>
+
+    <!-- Sign Up Pop-up -->
+    <div class="popup-overlay" id="signUpPopup">
+      <div class="popup-box">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Sign Up</h2>
+        <input id="signupUsername" class="input-field" type="text" placeholder="Username" />
+        <input id="signupEmail" class="input-field" type="email" placeholder="Email" />
+        <input id="signupPassword" class="input-field" type="password" placeholder="Password" />
+        <button class="submit-button" onclick="handleSignUp()">Sign Up</button>
+        <p>Already have an account? <a href="#" onclick="openLoginPopup()">Login</a></p>
+      </div>
+    </div>
+
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+  </body>
+  </html>

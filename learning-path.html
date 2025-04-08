@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Path - Guitar Master</title>
+    <link rel="stylesheet" href="learning-path.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="home.html">🎸 Guitar Master</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Lessons</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" id="profile-btn">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <h2>Welcome, <span id="username"></span>!</h2>
+        <p>Your current streak: <span id="streak-count"></span> days</p>
+    </div>
+
+    <!-- Learning Path Section -->
+    <section class="learning-path">
+        <h1>Choose your <span class="highlight">current level</span></h1>
+        <p>We'll get you on the right track</p>
+
+        <div class="level-container">
+            <!-- Beginner Card -->
+            <div class="level-card">
+                <img src="assets/beginner1.jpg" alt="Beginner">
+                <h3>Beginner</h3>
+                <p>I only know a few basics</p>
+            </div>
+
+            <!-- Intermediate Card -->
+            <div class="level-card">
+                <img src="assets/beginner2.jpg" alt="Intermediate">
+                <h3>Intermediate</h3>
+                <p>I can play many songs</p>
+            </div>
+
+            <!-- Advanced Card -->
+            <div class="level-card">
+                <img src="assets/beginner3.jpg" alt="Advanced">
+                <h3>Advanced</h3>
+                <p>I can play most songs and solos</p>
+            </div>
+        </div> <!-- Close the level-container div -->
+    </section>
+
+    <script src="learning-path.js"></script>
+</body>
+</html>

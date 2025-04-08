@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+/* Navbar */
+.header {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1db954;
+}
+
+/* Profile Section */
+.profile-section {
+    background: #222;
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Learning Path Section */
+.learning-path {
+    padding: 50px 10%;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.highlight {
+    color: #f1d900;
+}
+
+/* Level Selection (Horizontal Layout) */
+.level-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.level-card {
+    background: #1e1e1e;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute space evenly */
+    height: 100%; /* Ensure cards take full height */
+    min-height: 250px;
+}
+
+.level-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(29, 185, 84, 0.4);
+}
+
+.level-card img {
+    width: 100%;
+    height: 150px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevent images from shrinking */
+}
+.level-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.level-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #ffef08;
+    flex-grow: 1; /* Allow text to grow and fill space */
+}
+
+.level-card p {
+    margin: 5px 0 0;
+    color: #bbb;
+    flex-grow: 1; /* Allow text to grow and fill space */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .level-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

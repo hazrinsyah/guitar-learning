@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+  background-color: #121212;
+  color: #e4d50b;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #ffffff;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #222;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #1e1e1e;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li .active {
+    border-bottom: 2px solid #ffe600;
+  }
+  
+/* Lesson Section */
+.lessons {
+  text-align: center;
+  padding: 40px;
+}
+
+.lesson-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.lesson-card {
+  background: #222;
+  border-radius: 10px;
+  padding: 30px;
+  height: 9cm;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.lesson-card:hover {
+  transform: scale(1.05);
+  background: #a79600;
+}
+
+.lesson-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.lesson-card h3 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+}
+
+.lesson-card p {
+  font-size: 16px;
+  color: #bbb;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+  width: 45%;
+  text-align: center;
+  position: relative;
+  color: white;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close:hover {
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin-top: 40px;
+  color: #fff;
+}
