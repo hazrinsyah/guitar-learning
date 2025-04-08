@@ -104,6 +104,13 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+/* Layout Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
 /* Welcome Card */
 .welcome-card {
   background: linear-gradient(135deg, #ff9966, #ff5f5f);
@@ -116,7 +123,7 @@ section {
 
 .welcome-card h2 {
   margin: 0;
-  font-size: 26px;
+  font-size: 28px;
 }
 
 .welcome-card p {
@@ -124,20 +131,51 @@ section {
   font-size: 18px;
 }
 
-/* Adjusted Stats Container */
+/* Stats */
 .stats-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-/* Enhanced Badge Box */
+.stat-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.stat-box h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #444;
+}
+
+.stat-box p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.stat-box.streak {
+  border-left: 6px solid #ffa07a;
+}
+
 .stat-box.badge {
-  background: white;
-  color: #333;
-  border-left: 8px solid #ff5f5f;
+  border-left: 6px solid #ff5f5f;
 }
 
-.stat-box.badge h3 {
-  color: #ff5f5f;
+/* Motivation */
+.motivation .quote-box {
+  background-color: #fff;
+  padding: 25px;
+  border-left: 6px solid #2193b0;
+  font-style: italic;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.motivation h2 {
+  margin-bottom: 15px;
 }

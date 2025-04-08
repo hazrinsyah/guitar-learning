@@ -24,25 +24,36 @@
 
     <!-- Welcome Card -->
     <section class="welcome-card">
-      <h2>Welcome, <span id="userName">Loading...</span> 👋</h2>
-      <p>Let's keep your guitar journey going strong!</p>
+      <h2>Welcome back, <span id="userName">Loading...</span> 👋</h2>
+      <p>You're doing great. Stay consistent and keep strumming!</p>
     </section>
 
-    <!-- Practice Overview -->
-    <section class="practice-overview">
-      <h2>📊 Practice Overview</h2>
-      <div class="stats-container">
-        <div class="stat-box streak">
-          <h3>🔥 Streak</h3>
-          <p><span id="streak-days">0</span> day streak!</p>
-        </div>
-        <div class="stat-box badge">
-          <h3>🏅 Current Badge</h3>
-          <p id="current-badge">Beginner</p>
-        </div>
-      </div>
-    </section>
+    <div class="dashboard-grid">
 
+      <!-- Practice Overview -->
+      <section class="practice-overview">
+        <h2>📊 Practice Overview</h2>
+        <div class="stats-container">
+          <div class="stat-box streak">
+            <h3>🔥 Streak</h3>
+            <p><span id="streak-days">0</span> day streak!</p>
+          </div>
+          <div class="stat-box badge">
+            <h3>🏅 Current Badge</h3>
+            <p id="current-badge">Beginner</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Daily Motivation -->
+      <section class="motivation">
+        <h2>🌟 Daily Motivation</h2>
+        <div class="quote-box">
+          <p>"The only way to get better is to play every day, even if it's just for 10 minutes." 🎸</p>
+        </div>
+      </section>
+
+    </div>
   </div>
 
   <script src="dashboard.js"></script>
