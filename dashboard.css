@@ -133,18 +133,23 @@ section {
 
 /* Stats */
 .stats-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
 .stat-box {
-  background-color: white;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
 }
+
+.stat-box:hover {
+  transform: translateY(-3px);
+}
+
 
 .stat-box h3 {
   margin: 0;
@@ -247,3 +252,18 @@ section {
   color: #666;
 }
 
+/* Logout Button Styling */
+.logout-btn {
+  background-color: #c7c405;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background-color: #d62c3c;
+}

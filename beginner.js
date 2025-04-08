@@ -29,8 +29,7 @@ function updateNavLinks() {
     if (!userId) return;
 
     const navLinks = {
-        'nav-home-link': 'home.html',
-        'nav-lessons-link': 'lessons.html',
+        'nav-lessons-link': 'learning-path.html',
         'nav-dashboard-link': 'dashboard.html'
     };
 
