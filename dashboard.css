@@ -104,3 +104,40 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+/* Welcome Card */
+.welcome-card {
+  background: linear-gradient(135deg, #ff9966, #ff5f5f);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.welcome-card h2 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.welcome-card p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Adjusted Stats Container */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* Enhanced Badge Box */
+.stat-box.badge {
+  background: white;
+  color: #333;
+  border-left: 8px solid #ff5f5f;
+}
+
+.stat-box.badge h3 {
+  color: #ff5f5f;
+}

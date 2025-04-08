@@ -1,67 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar Master Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guitar Master Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <h2>🎸 Guitar Master</h2>
-        <ul>
-            <li><a href="#" class="active">Dashboard</a></li>
-            <li><a href="#">My Progress</a></li>
-            <li><a href="learning-path.html" id="lessons-link">Lessons</a></li>
-            <li><a href="#">Achievements</a></li>
-            <li><a href="#">Profile</a></li>
-        </ul>
-    </div>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>🎸 Guitar Master</h2>
+    <ul>
+      <li><a href="#" class="active">Dashboard</a></li>
+      <li><a href="#">My Progress</a></li>
+      <li><a href="learning-path.html" id="lessons-link">Lessons</a></li>
+    </ul>
+  </div>
 
-    <!-- Main Content -->
-    <div class="main-content">
-        <header>
-            <h2>Welcome, <span id="userName">Loading...</span></h2>
-            <p>Your personalized progress overview</p>
-        </header>
+  <!-- Main Content -->
+  <div class="main-content">
 
-        <!-- Practice Overview -->
-        <section class="practice-overview">
-            <h2>📊 Practice Overview</h2>
-            <div class="stats-container">
-                <div class="stat-box streak">
-                    <h3>🔥 Streak</h3>
-                    <p>You've practiced for <span id="streak-days">0</span> consecutive days!</p>
-                </div>
-                <div class="stat-box">
-                    <h3>🏅 Current Badge</h3>
-                    <p id="current-badge">Beginner</p>
-                </div>
-                <div class="stat-box">
-                    <h3>🎯 Total Practices Logged</h3>
-                    <p id="total-practices">0</p>
-                </div>
-            </div>
-        </section>
+    <!-- Welcome Card -->
+    <section class="welcome-card">
+      <h2>Welcome, <span id="userName">Loading...</span> 👋</h2>
+      <p>Let's keep your guitar journey going strong!</p>
+    </section>
 
-        <!-- Video Progress -->
-        <section class="video-progress">
-            <h2>🎥 Video Progress</h2>
-            <p><strong>Watched Videos:</strong> <span id="watched-videos">0</span></p>
-            <p><strong>Next Suggested Video:</strong> <span id="suggested-video">-</span></p>
-            <p><strong>Average Daily Watch Time:</strong> <span id="watch-time">0 min</span></p>
-        </section>
+    <!-- Practice Overview -->
+    <section class="practice-overview">
+      <h2>📊 Practice Overview</h2>
+      <div class="stats-container">
+        <div class="stat-box streak">
+          <h3>🔥 Streak</h3>
+          <p><span id="streak-days">0</span> day streak!</p>
+        </div>
+        <div class="stat-box badge">
+          <h3>🏅 Current Badge</h3>
+          <p id="current-badge">Beginner</p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Trends -->
-        <section class="trends">
-            <h2>📈 Weekly & Monthly Trends</h2>
-            <canvas id="progressChart"></canvas>
-        </section>
-    </div>
+  </div>
 
-    <script src="dashboard.js"></script>
+  <script src="dashboard.js"></script>
 </body>
 </html>
