@@ -40,7 +40,9 @@ function openModal(lesson) {
                   <li><strong>B Minor Barre Chord</strong>: Bar the 2nd fret and form a minor shape.</li>
                   <li><strong>Practice Tips</strong>: Start slow and focus on clean notes.</li>
               </ul>
-              <button onclick="playAudio('barre-chords.mp3')">🎵 Play Example</button>
+              <div class="modal-video">
+  <iframe class="modal-iframe" src="https://www.youtube.com/embed/bgkICElkvEY?si=EVyvQ1o3jaTJ462m" allowfullscreen></iframe>
+</div>
           `;
           break;
 
@@ -54,7 +56,10 @@ function openModal(lesson) {
                   <li><strong>String Skipping</strong>: Practice picking across non-adjacent strings.</li>
                   <li><strong>Metronome Practice</strong>: Use a metronome to build speed gradually.</li>
               </ul>
-              <button onclick="playAudio('alternate-picking.mp3')">🎵 Play Example</button>
+              <div class="modal-video">
+  <iframe class="modal-iframe" src="https://www.youtube.com/embed/q8SHmo1-dac?si=cvmiu2jMqtNJdNqd" allowfullscreen></iframe>
+</div>
+
           `;
           break;
 
@@ -68,7 +73,10 @@ function openModal(lesson) {
                   <li><strong>Arpeggio Patterns</strong>: Play chord notes individually for a flowing sound.</li>
                   <li><strong>Thumb Independence</strong>: Practice thumb patterns while fingers play melodies.</li>
               </ul>
-              <button onclick="playAudio('fingerstyle.mp3')">🎵 Play Example</button>
+              <div class="modal-video">
+  <iframe class="modal-iframe" src="https://www.youtube.com/embed/jF0RduFSyHg?si=OFqm7DthCTydCA_P" allowfullscreen></iframe>
+</div>
+
           `;
           break;
 
@@ -82,7 +90,10 @@ function openModal(lesson) {
                   <li><strong>Call and Response</strong>: Create musical phrases that "answer" each other.</li>
                   <li><strong>Backing Tracks</strong>: Practice improvising over backing tracks.</li>
               </ul>
-              <button onclick="playAudio('improvisation.mp3')">🎵 Play Example</button>
+              <div class="modal-video">
+  <iframe class="modal-iframe" src="https://www.youtube.com/embed/3b-lBCHV5iQ?si=3wvgV4KVbk5m-0Nt" allowfullscreen></iframe>
+</div>
+
           `;
           break;
   }

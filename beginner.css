@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: #121212;
   color: white;
+  text-align: center;
 }
 
 /* Navigation Bar */
@@ -75,7 +76,7 @@ nav ul li .active {
 }
 
 .modal-content {
-  background: white;
+  background: rgb(255, 255, 255);
   color: black;
   padding: 20px;
   border-radius: 10px;
@@ -88,4 +89,12 @@ nav ul li .active {
   float: right;
   font-size: 24px;
   cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin-top: 40px;
+  color: #fff;
 }

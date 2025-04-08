@@ -1,3 +1,6 @@
+// Variable to track if user clicked on Lessons link
+let lessonsLinkClicked = false;
+
 // Function to open the login popup
 function openLoginPopup() {
     document.getElementById("loginPopup").style.display = "flex";
@@ -30,6 +33,12 @@ function redirectToDashboard() {
     }
 }
 
+// Function to handle Lessons link click
+function handleLessonsClick() {
+    lessonsLinkClicked = true;
+    openLoginPopup();
+}
+
 // Function to handle login
 function handleLogin() {
     var username = document.getElementById("loginUsername").value;
@@ -49,8 +58,13 @@ function handleLogin() {
                 localStorage.setItem("loggedInUser", username); // Store login status
                 localStorage.setItem("userStreak", data.streak); // Store streak
 
-                // Redirect to dashboard.html with userid in query params
-                window.location.href = `dashboard.html?userid=${data.userid}`;
+                // Redirect based on which link was clicked
+                if (lessonsLinkClicked) {
+                    window.location.href = `learning-path.html?userid=${data.userid}`;
+                    lessonsLinkClicked = false; // Reset the flag
+                } else {
+                    window.location.href = `dashboard.html?userid=${data.userid}`;
+                }
             } else {
                 alert("Error: " + data.message);
             }

@@ -13,6 +13,28 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     }
 
+    // Update navbar links with user ID
+    function updateNavLinks() {
+        const homeLink = document.getElementById("home-link");
+        const lessonsLink = document.getElementById("lessons-link");
+        const dashboardLink = document.getElementById("dashboard-link");
+        
+        if (homeLink) {
+            homeLink.href = `home.html?userid=${userId}`;
+        }
+        
+        if (lessonsLink) {
+            lessonsLink.href = `learning-path.html?userid=${userId}`;
+        }
+        
+        if (dashboardLink) {
+            dashboardLink.href = `dashboard.html?userid=${userId}`;
+        }
+    }
+
+    // Call updateNavLinks on page load
+    updateNavLinks();
+
     // Fetch user data
     fetch(`http://localhost:8000/user?userid=${userId}`)
         .then(response => {
